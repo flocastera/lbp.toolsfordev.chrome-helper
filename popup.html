@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<style>
+    html{
+        width: 700px;
+    }
+    body{
+        width: 700px;
+    }
+    table, td, th{
+        border: 1px solid black;
+    }
+    table{
+        border-spacing: 0;
+        width: 100%;
+    }
+    td, th{
+        padding: 5px 10px;
+        text-align: center;
+    }
+    th{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    td input, td textarea{
+        text-align: right;
+        transition: all 0.3s ease;
+        box-shadow: #00d928 0 0 20px;
+        width: 100%;
+        padding: 3px 5px;
+    }
+    td input.id-client{
+        width: 100px;
+    }
+    tbody tr:nth-child(even){
+        background: #494949;
+    }
+    input:read-only, textarea:read-only{
+        box-shadow: none;
+        font-style: italic;
+        color: #696969;
+    }
+    td a img{
+        width: 14px;
+        height: 14px;
+    }
+    tfoot td{
+        text-align: left;
+    }
+</style>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Description</th>
+        <th>Comptes associés</th>
+    </tr>
+    </thead>
+    <tbody id="clientsContainer">
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="3"><a href="#" id="addClient">Ajouter un client</a></td>
+        <td colspan="3"><label id="messages" class="label label-success"></label></td>
+    </tr>
+    </tfoot>
+</table>
+
+
+<script type="text/javascript" src="js/popup.js"></script>
+</body>
+</html>
