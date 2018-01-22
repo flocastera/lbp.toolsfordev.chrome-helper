@@ -1,4 +1,5 @@
 var KEY_SAVED_CLIENTS =  'savedClients';
+var KEY_SAVED_ERRORS = 'savedErrors';
 
 var clients = localStorage[KEY_SAVED_CLIENTS];
 clients = ((clients && clients !== '') ? JSON.parse(clients) : []);
